@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cocoabean</title>
+    <link rel="stylesheet" href="style.css">
+    <link href=link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,100;1,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/844fa68705.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img class="logo" src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navlinks">
+                <i class="far fa-times-circle" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Contact</a></li>
+
+            </ul>
+        </div>
+        <i class="fas fa-bars"onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Let's <br>Taste the Chocos</h1>
+            <p>chocolates have big calory and it is healthy</p>
+            <a  class ="hero-btn" href="">Purchase chocolates</a>
+        </div>
+        
+        
+    </section>
+
+    <section class="products">
+        <h1>Products We Have</h1>
+        <p>we have several natural products along with the chocos. we making it completely natural</p>
+        <div class="row">
+            <div class="prod_col">
+                <h3>Chocos</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
+                
+            </div>
+            <div class="prod_col">
+                <h3>Tea & Coffee</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>            </div>
+            <div class="prod_col">
+                <h3>Nuts</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>            </div>
+        </div>
+    </section>
+    <section class="shop">
+        <h1>Our Global Shops</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>            </div>
+
+    </section>
+<!-- javascript for toggle menu -->
+<script>
+    var navlinks =document.getElementById("navlinks");
+    function showmenu(){
+        navlinks.style.right="0";
+        navlinks.style.display="inline-block";
+
+    }
+    function hidemenu(){
+        navlinks.style.right="-220px";
+    }
+</script>    
+</body>
+</html>
